@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">APPFootBall</string>
+    <string name="home">HOME</string>
+
+    <string name="PL">null</string>
+    <string name="startDate">START DATE: </string>
+    <string name="endDate">END DATE: </string>
+    <string name="matchday">Matchday: </string>
+    <string name="matchdayNumber">28</string>
+
+    <string name="sDate">2021–08–13</string>
+    <string name="eDate">2022–05–22</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title">WELCOME \nBACK \nFOOTBALL-ER</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="signIn">Sign Up</string>
+
+    <string name="helperText">*Required</string>
+
+    <string name="leagueName">League Name</string>
+    <string name="matchDay">CURRENTMATCHDAY :</string>
+    <string name="matchDayNumber">33</string>
+</resources>
