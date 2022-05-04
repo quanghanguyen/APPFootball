@@ -34,4 +34,10 @@
     <string name="lost">L</string>
     <string name="draw">D</string>
     <string name="points_value">Pst</string>
+    <string name="area">AREA</string>
+    <string name="tla">TLA</string>
+    <string name="color">COLOR</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="website">Website:</string>
 </resources>

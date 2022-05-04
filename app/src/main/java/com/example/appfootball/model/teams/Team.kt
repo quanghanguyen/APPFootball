@@ -15,7 +15,7 @@ data class Team(
     @SerializedName("crestUrl")
     val crestUrl: String,
     @SerializedName("email")
-    val email: String,
+    val email: String?,
     @SerializedName("founded")
     val founded: Int,
     @SerializedName("id")
@@ -25,7 +25,7 @@ data class Team(
     @SerializedName("name")
     val name: String,
     @SerializedName("phone")
-    val phone: String,
+    val phone: String?,
     @SerializedName("shortName")
     val shortName: String,
     @SerializedName("tla")
@@ -33,7 +33,7 @@ data class Team(
     @SerializedName("venue")
     val venue: String,
     @SerializedName("website")
-    val website: String
+    val website: String?
 ) : Parcelable
 {
     override fun toString(): String {

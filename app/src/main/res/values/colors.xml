@@ -18,4 +18,8 @@
     <color name="loginPageBackground">#FFFFFF</color>
     <color name="textInputOutlineColor">#FBBBAC</color>
 
+    <color name="blueSteal">#e8f3f9</color>
+    <color name="blueSteal2">#ededed</color>
+    <color name="whiter">#fafbfd</color>
+
 </resources>
