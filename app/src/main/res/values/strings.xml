@@ -24,4 +24,14 @@
     <string name="leagueName">League Name</string>
     <string name="matchDay">CURRENTMATCHDAY :</string>
     <string name="matchDayNumber">33</string>
+
+
+    <string name="points">1</string>
+    <string name="nameChart">Man City</string>
+    <string name="position">#</string>
+    <string name="club">Club</string>
+    <string name="win">W</string>
+    <string name="lost">L</string>
+    <string name="draw">D</string>
+    <string name="points_value">Pst</string>
 </resources>

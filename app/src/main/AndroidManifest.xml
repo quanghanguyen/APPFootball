@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.APPFootBall">
         <activity
+            android:name=".view.DetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.InfoActivity"
             android:exported="false" />
         <activity

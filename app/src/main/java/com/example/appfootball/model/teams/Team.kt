@@ -9,7 +9,7 @@ data class Team(
     val area: AreaX,
     @SerializedName("clubColors")
     val clubColors: String,
-    @SerializedName("cresUrl")
+    @SerializedName("crestUrl")
     val crestUrl: String,
     @SerializedName("email")
     val email: Any,

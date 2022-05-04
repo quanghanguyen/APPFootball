@@ -3,6 +3,7 @@ package com.example.appfootball.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -36,13 +37,19 @@ class MainActivity : AppCompatActivity() {
 
             competitionsRecyclerViewAdapter.setOnItemClickListerner(object : CompetitionsRecyclerViewAdapter.onItemClickListerner {
                 override fun onItemClick(position: Int) {
-                    when (position)
-                    {
-                        0, 1, 2, 3 -> intent = Intent(this@MainActivity, InfoActivity::class.java).apply {
-                            intent.putExtra("id", competitionsRecyclerViewAdapter.lstCompetitions[position].id)
-                        }
-                        else -> Toast.makeText(this@MainActivity, "Error", Toast.LENGTH_SHORT).show()
-                    }
+//                    when (position)
+//                    {
+//                        0, 1, 2, 3 ->
+//                            intent = Intent(this@MainActivity, InfoActivity::class.java).apply {
+////                                intent.putExtra("id", competitionsRecyclerViewAdapter.lstCompetitions[position].id)
+//                                intent.putExtra("id", competitionsRecyclerViewAdapter.lstCompetitions[position].id)
+////                                intent.putExtra("id", 2021)
+//
+//                        }
+//                        else -> Toast.makeText(this@MainActivity, "Error", Toast.LENGTH_SHORT).show()
+//                    }
+                    intent = Intent(this@MainActivity, InfoActivity::class.java)
+                    intent.putExtra("id", competitionsRecyclerViewAdapter.lstCompetitions[position].id)
                     startActivity(intent)
                 }
             })

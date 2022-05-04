@@ -14,13 +14,16 @@ class InfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val id = intent?.extras?.getInt("id") ?: 0
+//        val id = intent?.extras?.getInt("id") ?: 0
+        val id = intent?.getIntExtra("id", 0)
         infoBinding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(infoBinding.root)
-        setViewPager(id)
+        if (id != null) {
+            setViewPager(id)
+        }
     }
 
-    private fun setViewPager(id: Int) {
+    private fun setViewPager(id : Int) {
         val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager, lifecycle, id)
         infoBinding.vpInfo.adapter = viewPagerAdapter
 

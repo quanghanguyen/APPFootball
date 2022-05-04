@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tvPosition"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlCiv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/tvPosition">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civTeamIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/ic_launcher_background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlName"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/rlCiv"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/tvNameTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|left|start"
+                android:text="@string/nameChart"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvW"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/rlName"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/tvW"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvD"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/tvL"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/tvD"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

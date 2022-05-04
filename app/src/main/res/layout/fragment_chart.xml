@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.ChartFragment">
+    tools:context=".view.fragment.ChartFragment"
+    android:background="@drawable/chart_background">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ProgressBar
+        android:id="@+id/chartPb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/bg_pb"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlChartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvL1PositionTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/position"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvL1ClubTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/tvL1PositionTitle"
+            android:gravity="center"
+            android:text="@string/club"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvL1WTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="75dp"
+            android:layout_toEndOf="@+id/tvL1ClubTitle"
+            android:gravity="center"
+            android:text="@string/win"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvL1LTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/tvL1WTitle"
+            android:gravity="center"
+            android:text="@string/lost"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvL1DTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/tvL1LTitle"
+            android:gravity="center"
+            android:text="@string/draw"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvL1PTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/tvL1DTitle"
+            android:gravity="center"
+            android:text="@string/points_value"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rcvChart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@+id/rlChartTitle" />
 
-</FrameLayout>
+</RelativeLayout>

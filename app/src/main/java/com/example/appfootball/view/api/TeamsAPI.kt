@@ -8,6 +8,6 @@ import retrofit2.http.Path
 interface TeamsAPI {
 
     @GET("v2/competitions/{id}/teams")
-    fun getTeamDetail(@Path("id") id:Int) : Call<TeamsModel>
+    fun getTeamDetail(@Path("id") id : Int) : Call<TeamsModel>
 
 }

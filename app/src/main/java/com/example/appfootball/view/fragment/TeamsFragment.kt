@@ -23,7 +23,7 @@ class TeamsFragment : Fragment() {
 
     companion object
     {
-        fun getInstance(id:Int) = TeamsFragment().apply {
+        fun getInstance(id : Int) = TeamsFragment().apply {
             arguments = bundleOf("id" to id)
         }
     }
@@ -54,7 +54,7 @@ class TeamsFragment : Fragment() {
             fragmentTeamsBinding.teamsPb.visibility = View.GONE
             fragmentTeamsBinding.rcvTeams.visibility = View.VISIBLE
         })
-        teamsViewModel.makeTeamsAPICall(2019)
+        teamsViewModel.makeTeamsAPICall(id)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -68,7 +68,6 @@ class TeamsFragment : Fragment() {
             teamsRecyclerViewAdapter.setOnTeamsItemClickListerner(object : TeamsRecyclerViewAdapter.onTeamsItemClickLIsterner {
                 override fun onTeamsItemClick(teamsData: Team) {
                     Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_SHORT).show()
-
                 }
             })
         }
