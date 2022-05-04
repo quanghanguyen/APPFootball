@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appfootball.R
 import com.example.appfootball.databinding.FragmentTeamsBinding
 import com.example.appfootball.model.teams.Team
+import com.example.appfootball.view.DetailsActivity
 import com.example.appfootball.view.adapter.TeamsRecyclerViewAdapter
 import com.example.appfootball.viewmodel.TeamsViewModel
 
@@ -68,6 +69,7 @@ class TeamsFragment : Fragment() {
             teamsRecyclerViewAdapter.setOnTeamsItemClickListerner(object : TeamsRecyclerViewAdapter.onTeamsItemClickLIsterner {
                 override fun onTeamsItemClick(teamsData: Team) {
                     Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_SHORT).show()
+                    DetailsActivity.startDetails(requireContext(), teamsData)
                 }
             })
         }
