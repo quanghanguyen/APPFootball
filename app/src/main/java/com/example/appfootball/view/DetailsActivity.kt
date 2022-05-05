@@ -42,6 +42,11 @@ class DetailsActivity : AppCompatActivity() {
                 tvEmailDetails.text = teams!!.email
                 tvWebsiteDetails.text = teams!!.website
 
+                tvAddressDetail.text = teams!!.address
+                tvFoundedDetail.text = teams!!.founded.toString()
+                tvVenueDetail.text = teams!!.venue
+                tvLastUpdatedDetail.text = teams!!.lastUpdated
+
 
                 Glide.with(ivTeams)
                     .load(teams.crestUrl)

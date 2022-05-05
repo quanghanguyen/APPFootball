@@ -40,4 +40,10 @@
     <string name="phone">Phone:</string>
     <string name="email">Email:</string>
     <string name="website">Website:</string>
+    <string name="more_information">MORE INFO</string>
+    <string name="player_will_be_available">Player will be available</string>
+    <string name="address">ADDRESS:</string>
+    <string name="founded">FOUNDED:</string>
+    <string name="venue">VENUE:</string>
+    <string name="last_updated">LAST UPDATED:</string>
 </resources>
